@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="../app2/css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="../app2/css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="../app2/js/jquery-1.11.2.min.js"></script>
+<script src="../app2/js/jquery.mobile-1.4.5.min.js"></script>
+<script src="../app2/js/acciones.js"></script>
+<script src="../app2/phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/dimension2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="a">
+<h1>Popocatépetl</h1>
+</div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/index.html" style="width:800px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Popocatépetl</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Volcán de colima</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+  <h4>Aplicacion Tres</h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>Luis Alberto Ramos Luna</h4>
+  </div>
+</div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Popocatépetl</h1>
+ </div>
+ <div data-role="content" align="center">
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Ubicación</h1>
+<p>Se localiza a unos 72 km al sureste de la Ciudad de México, 43 km de Puebla, 63 km de Cuernavaca, y 53 km de Tlaxcala.</p>
+<p>Sus cordenadas geográficas son: 19°01′20″N 98°37′40″O</p>
+<img src ="imagenes/ubicacion.jpg" width="350" height="250">
+ </div>
+ </div>
+<div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Dimensiones</h1>
+ <p>Altura: 5,452 msnm</p>
+<p>Diámetro mayor del cráter: 900m</p>	
+<p>Profundidad del cráter: 150m (desde labio inferior)</p>
+<p>Área del edificio volcánico: 500 km2</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/dimension2.jpg',1)"><img src="imagenes/dimension1.jpg" width="300" height="168" id="Image10"></a>
+ </div>
+ </div>
+  <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Dependencias que lo monitorean</h1>
+<div>
+<a href="http://www.cenapred.unam.mx/es/"><img src ="imagenes/cenapred.png" width="610" height="129"></a>
+</div>
+<p>Una muestra de un sistema de vigilancia y monitoreo oportunamente establecido es el del volcán Popocatépetl. En un esfuerzo conjunto del Centro Nacional de Prevención de Desastres (CENAPRED), de la Secretaría de Gobernación, los Institutos de Geofísica y de Ingeniería , de la UNAM , y con la colaboración del Cascades Volcano Observatory, del U.S. Geological Survey, se estableció en los últimos años un complejo sistema de observación telemétrico con una central de adquisición y procesamiento de datos.</p>
+ </div>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Medidas Preventivas</h1>
+<div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>En caso de caida de ceniza</h1>
+<img src ="imagenes/ceniza.jpg" width="300" height="168">
+<p>1.Prepara para cada miembro de tu familia, una tarjeta con su nombre y dirección.</p>
+<p>2.Si tu vivienda tiene servicios de gas, luz y agua, asegúrate de saber como se cierran.</p>
+<p>3.Si puedes guarda: agua potable y alimentos, las medicinas que estés tomando tú o alguien de tu familia, así como tus documentos más importantes, como títulos de propiedad, actas de nacimiento o matrimonio, cartillas, etc.</p>
+<p>4.Procura tener a la mano un radio de pilas, linterna y las llaves de tu casa.Cubre los depósitos de agua y alimentos para evitar que se contaminen con las cenizas que puedan caer.</p>
+<p>5.Si tienes ganado o cualquier tipo de animales consulta en la unidad de Protección Civil qué debes de hacer con ellos.</p>
+<img src ="imagenes/ceniza3.png" width="249" height="203">
+ </div>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>En caso de erupción</h1>
+<p>1.Conserva la calma, reúne a tu familia, pónles una identificación, cuida que puertas y ventanas queden cerradas y coloca una sábana o tela blanca hacia la calle para comprobar que se trata de un domicilio evacuado.</p>
+<p>2.Ve inmediatamente a los centros de reunión. Lleva solo lo indispensable.</p>
+<p>3.Si puedes evacuar por tus propios medios, no dudes en hacerlo y dirígete al refugio temporal que te corresponde.</p>
+<p>4.Al llegar al refugio temporal regístrate y ubícate en el sitio que se te indique.</p>
+<p>5.Si requieres atención médica, acude a la instalación más cercana del Sistema de Salud.</p>
+<p>6.En el refugio temporal colabora en lo que se te pida, mantén contacto con las autoridades, ellas te indicarán las reglas a seguir durante tu estancia. Asimismo te informarán sobre la evolución de la emergencia, hasta que esta termine.</p>
+<p>7.Si no puedes localizar el centro de reunión o no se presenta el medio de transporte para evacuarte, aléjate del volcán caminando por las partes altas hasta un lugar seguro.</p>
+<img src ="imagenes/erupcion.jpg" width="355" height="142">
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+  <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres</h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>LARL</h4>
+ </div>
+ </div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Volcan de Colima</h1>
+ </div>
+ <div data-role="content" align="center">
+  <img src ="imagenes/colima3.jpg" width="350" height="220">
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Información</h1>
+<div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Ubicación</h1>
+ <p>CEl volcán de colima es un estratovolcán ubicado en los límites de los estados de Colima y Jalisco, en México.</p>
+ <p>Coordenadas geográficas: 19°30′41″N 103°37′05″O</p>
+ </div>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Dimensiones</h1>
+ <p> El volcán de Colima o volcán de Fuego se eleva entre 3870 y 3940 msnm, y su altura se encuentra en un constante cambio gracias a la constante actividad que ha presentado durante los últimos años; por eso resulta difícil decir con exactitud cuál es en estos momentos.<p>
+ <div> <img src ="imagenes/colima.jpg" width="280" height="400">
+ </div>
+ </div>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Dependencias que lo monitorean</h1>
+ <a href="http://www.proteccioncivil.gob.mx/"><img src ="imagenes/sinaproc.jpg" width="336" height="150"></a>
+<p> Según define la Organización Internacional de Protección Civil, la protección civil es un sistema por el que cada país proporciona la protección y la asistencia para todos ante cualquier tipo de desastre o accidente relacionado con esto, así como la salvaguarda de los bienes del conglomerado y del medio ambiente.</p>
+ </div>
+ </div>
+  <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Medidas Preventivas</h1>
+<div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>En caso de caida de ceniza</h1>
+<img src ="imagenes/ceniza4.jpg" width="267" height="189">
+<p>1.Prepara para cada miembro de tu familia, una tarjeta con su nombre y dirección.</p>
+<p>2.Si tu vivienda tiene servicios de gas, luz y agua, asegúrate de saber como se cierran.</p>
+<p>3.Si puedes guarda: agua potable y alimentos, las medicinas que estés tomando tú o alguien de tu familia, así como tus documentos más importantes, como títulos de propiedad, actas de nacimiento o matrimonio, cartillas, etc.</p>
+<p>4.Procura tener a la mano un radio de pilas, linterna y las llaves de tu casa.Cubre los depósitos de agua y alimentos para evitar que se contaminen con las cenizas que puedan caer.</p>
+<p>5.Si tienes ganado o cualquier tipo de animales consulta en la unidad de Protección Civil qué debes de hacer con ellos.</p>
+<img src ="imagenes/ceniza2.jpg" width="293" height="172">
+ </div>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+<h1>En caso de erupción</h1>
+<p>1.Conserva la calma, reúne a tu familia, pónles una identificación, cuida que puertas y ventanas queden cerradas y coloca una sábana o tela blanca hacia la calle para comprobar que se trata de un domicilio evacuado.</p>
+<p>2.Ve inmediatamente a los centros de reunión. Lleva solo lo indispensable.</p>
+<p>3.Si puedes evacuar por tus propios medios, no dudes en hacerlo y dirígete al refugio temporal que te corresponde.</p>
+<p>4.Al llegar al refugio temporal regístrate y ubícate en el sitio que se te indique.</p>
+<p>5.Si requieres atención médica, acude a la instalación más cercana del Sistema de Salud.</p>
+<p>6.En el refugio temporal colabora en lo que se te pida, mantén contacto con las autoridades, ellas te indicarán las reglas a seguir durante tu estancia. Asimismo te informarán sobre la evolución de la emergencia, hasta que esta termine.</p>
+<p>7.Si no puedes localizar el centro de reunión o no se presenta el medio de transporte para evacuarte, aléjate del volcán caminando por las partes altas hasta un lugar seguro.</p>
+<img src ="imagenes/erupcion2.jpg" width="355" height="250">
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div data-role="main" class="ui-content">
+ <div data-role="collapsible" data-content-theme="false">
+ <h1>Actividad volcánica</h1>
+ <p>Durante la noche del miércoles y la madrugada de este jueves, el Volcán de fuego de Colima registró tres explosiones.</p>
+<p>Según el portal webcamsdemexico, el coloso tuvo otra erupción a las 6.20 de este jueves. La plataforma, desde el año pasado, instaló una cámara de video para poder monitorear la actividad del volcán de Colima.</p>
+<p>En las explosiones que se registraron, el coloso arrojó material incandescente, por lo que prevé la caída de ceniza en las comunidades cercanas al volcán, entre ellas, la Yerbabuena y la Becerrera en Colima que se encuentran a escasos 7 kilómetros de las faldas del volcán.</p>
+<p>Las columnas eruptivas que se registraron durante la noche del miércoles y la madrugada de este jueves alcanzaron los 2 mil metros, sobre el cráter.</p>
+<p>En las últimas 24 horas, el volcán ha registrado seis explosiones.</p>
+<img src ="imagenes/colima2.png" width="500" height="360">
+ </div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a">
+ <h4>Aplicacion Tres</h4>
+  <h4>Volcan Popocatépetl</h4>
+  <h4>LARL</h4>
+ </div>
+</div>
+</body>
+ </html>
